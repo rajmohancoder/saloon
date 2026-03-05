@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Services | Aura Stylist</title>
+    <meta name="description"
+        content="Explore our full menu of services for men, women, and kids. Detailed prices and durations for all hair and beauty treatments.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#d4af37',
+                            'gold-light': '#e5c1cd',
+                            charcoal: '#1a1a1a',
+                            cream: '#fdfbf7',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .glass-nav {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-brand-cream text-brand-charcoal">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-brand-gold/20 py-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Aura Stylist Logo" class="h-10 w-auto">
+                <span class="font-serif text-2xl tracking-widest text-brand-gold uppercase hidden sm:block">Aura
+                    Stylist</span>
+            </a>
+            <a href="index.html#booking"
+                class="bg-brand-gold text-brand-charcoal px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 active:scale-95">Book
+                Now</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 bg-brand-charcoal text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="font-serif text-4xl md:text-6xl mb-4 italic">Service Menu</h1>
+            <p class="text-brand-gold uppercase tracking-[0.3em] font-semibold text-sm">Crafted for every generation</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20 px-6 max-w-7xl mx-auto">
+
+        <!-- Main Content -->
+        <main class="py-20 px-6 max-w-7xl mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+
+                <!-- Category: Kids -->
+                <div class="space-y-10">
+                    <div class="flex items-center gap-4 mb-2">
+                        <h2 class="font-serif text-3xl md:text-4xl">Kids</h2>
+                        <div class="h-px flex-grow bg-brand-gold/30"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Junior Style (< 12)</h3>
+                                        <div class="text-right">
+                                            <span class="block font-bold text-brand-gold">$30</span>
+                                            <span class="text-[10px] text-gray-400 uppercase">30 mins</span>
+                                        </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Cool and comfortable cuts for our younger
+                                clients.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Teen Transformation</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$50</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">60 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Fresh, trend-driven styling for the
+                                fashion-forward teen.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">First Haircut Ceremony</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$40</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">45 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">A gentle introduction with a commemorative
+                                certificate.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Braiding Bliss</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$35</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">40 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Creative, playful braiding for any special
+                                occasion.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Gentle Scalp Massage</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$20</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">20 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Soothing, child-friendly treatment for
+                                relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Women -->
+                <div class="space-y-10">
+                    <div class="flex items-center gap-4 mb-2">
+                        <h2 class="font-serif text-3xl md:text-4xl">Women</h2>
+                        <div class="h-px flex-grow bg-brand-gold/30"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Elite Cut & Blowout</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$75</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">90 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Designer cut including consultation and luxury
+                                styling.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Full Artistry Color</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$150</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">180 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Custom root-to-end color application using
+                                organic pigments.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Balayage Masterpiece</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$220</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">210 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Hand-painted highlighting for a seamless,
+                                sun-kissed look.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Keratin Silk Treatment</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$200</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">150 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Intense smoothing treatment for frizz-free,
+                                luminous hair.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Luxe Bridal Styling</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$110</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">120 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Expert wedding styling tailored to your
+                                accessory style.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Root Touch-up</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$60</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">60 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Precision color matching for seamless root
+                                maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Men -->
+                <div class="space-y-10">
+                    <div class="flex items-center gap-4 mb-2">
+                        <h2 class="font-serif text-3xl md:text-4xl">Men</h2>
+                        <div class="h-px flex-grow bg-brand-gold/30"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Signature Executive Cut</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$45</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">45 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Precision cut, neck shave, and relaxing scalp
+                                massage.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Beard Sculpt & Shave</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$35</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">30 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Expert trimming and hot towel straight-razor
+                                detailing.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Scalp Detox & Refresh</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$35</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">30 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Deep cleansing treatment to revitalize the
+                                scalp.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Grey Blending</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$40</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">40 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Subtle natural-looking camouflage for grey hair.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Classic Wet Shave</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$30</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">30 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Traditional multi-pass shave for ultimate
+                                smoothness.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-gold/10 service-card">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Hair & Beard Combo</h3>
+                                <div class="text-right">
+                                    <span class="block font-bold text-brand-gold">$65</span>
+                                    <span class="text-[10px] text-gray-400 uppercase">75 mins</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs font-light">Our total grooming package for the modern
+                                gentleman.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-brand-charcoal text-white rounded-3xl p-12 text-center">
+                <h2 class="font-serif text-3xl md:text-4xl mb-6 italic">Ready for your transformation?</h2>
+                <p class="max-w-2xl mx-auto opacity-80 font-light mb-10">Select your services and secure your
+                    appointment
+                    with one of our master stylists today.</p>
+                <div class="flex justify-center">
+                    <a href="index.html#booking"
+                        class="bg-brand-gold text-brand-charcoal px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-xl">Book
+                        Appointment Now</a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-brand-charcoal text-white/50 py-12 text-center border-t border-white/5">
+            <p class="uppercase tracking-widest text-xs">&copy; 2026 AURA STYLIST. ALL RIGHTS RESERVED.</p>
+        </footer>
+
+</body>
+
+</html>
